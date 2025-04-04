@@ -1,0 +1,170 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--neon-cyan);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: var(--neon-cyan);
+  box-shadow: 0 0 0 3px rgba(0, 243, 255, 0.1);
+  outline: none;
+}
+
+.character-counter {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 0.5rem;
+}
+
+.alternative-contact {
+  margin-top: 2rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.alternative-contact h2 {
+  margin-bottom: 1rem;
+  color: var(--neon-cyan);
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: var(--neon-cyan);
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: absolute;
+  left: 1rem;
+  transition: opacity 0.3s ease;
+}
+
+.back-button:hover {
+  opacity: 0.8;
+}
+
+#Send {
+  width: 20px;
+  height: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background: var(--glass-bg);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  font-family: var(--font-heading);
+  color: var(--neon-cyan);
+  margin: 0;
+}
+
+.theme-toggle {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--neon-cyan);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.theme-toggle:hover {
+  opacity: 0.8;
+}
+.header {
+  padding: 2rem;
+}
+
+.header-title {
+  font-size: 2.5rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .page-title {
+    font-size: 2rem;
+  }
+  
+  input, textarea {
+    padding: 0.8rem;
+  }
+  
+  .character-counter {
+    font-size: 0.7rem;
+  }
+  
+  .alternative-contact {
+    margin-top: 1rem;
+  }
+  
+  .alternative-contact h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0.5rem;
+  }
+  
+  .page-title {
+    font-size: 1.5rem;
+  }
+  
+  input, textarea {
+    padding: 0.6rem;
+  }
+  
+  .alternative-contact h2 {
+    font-size: 1rem;
+  }
+}
